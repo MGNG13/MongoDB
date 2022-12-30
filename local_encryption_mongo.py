@@ -73,7 +73,7 @@ if __name__ == '__main__':
     client_encryption = DatabaseUtils.getClientEncryption(generated_master_key, key_vault_namespace, DatabaseClient)
 
     ## Insert to KeyVault.
-    generated_master_key_uid = client_encryption.create_data_key('local')
+    generated_master_key_uid = client_encryption.create_data_key('local', key_alt_names=[generated_master_key_hash])
     MasterKeyUtils.saveMasterKey(generated_master_key, generated_master_key_hash, generated_master_key_uid)
 
     #### Explicitly encrypt a field.
