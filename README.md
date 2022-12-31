@@ -1,5 +1,5 @@
-# MongoDB-Python
-Things I did to fix some problems with Python and MongoDB.
+# MongoDB
+Things I did to fix some problems with MongoDB.
 
 
 ## LICENSE
