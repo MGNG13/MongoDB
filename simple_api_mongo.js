@@ -3,8 +3,8 @@ const express = require("express");
 const helmet = require("helmet");
 const morgan = require("morgan");
 
-const dbclient = new MongoClient("mongodb://OWNYmanGeNTATOAtIcrisTIAb2ba80ae:F%26N3%24%40mhBxw7ZyC6aI0bUXPYgRG9FHf%5ELp6677r4DC%5EteEJns@localhost:27017/?directConnection=true&authMechanism=SCRAM-SHA-256&retryReads=true&retryWrites=true&connectTimeoutMS=300000&socketTimeoutMS=300000&authSource=admin");
-const collection = dbclient.db("gotrendier").collection("main");
+const dbclient = new MongoClient();
+const collection = dbclient.db("test").collection("main");
 
 app = express();
 app.use(express.json());
